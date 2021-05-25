@@ -1,7 +1,7 @@
 import urllib.parse as up
 import requests
 
-# ./shellscript.sh -f hu -t en -w eper
+# ./shellscript.sh -f hu -t en -w "eper"
 
 # word = "eper"
 # target = "en"
@@ -18,11 +18,11 @@ def csinald(source, target, word):
 
     payload = (
         "q="
-        + up.quote(word)
+        + up.quote(word.lower())
         + "&target="
-        + up.quote(target)
+        + up.quote(target.lower())
         + "&source="
-        + up.quote(source)
+        + up.quote(source.lower())
         + ""
     )
 
@@ -37,4 +37,4 @@ def csinald(source, target, word):
     translation_data = response.json()
     translation = translation_data["data"]["translations"][0]["translatedText"]
 
-    print(translation)
+    print(translation.lower())

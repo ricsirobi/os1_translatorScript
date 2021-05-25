@@ -5,16 +5,16 @@ help()
 echo "Használati útmutató:
 Leírás:
 	Lefordít egy adott szöveget megadott nyelvről a másik megadott nyelvre
-	-f
-	    (from) nyelv, amiről fordítunk: két karakter, pl hu, en, es
+	-s
+	    (source lang) nyelv, amiről fordítunk: két karakter, pl hu, en, es
 	-t
-	     (to) nyelv, amire fordítunk: két karakter, pl hu, en, es
+	     (target lang) nyelv, amire fordítunk: két karakter, pl hu, en, es
 	-w
-	   (var/string) a szöveg amit szeretnénk lefordítani
+	   (statment literal) a szöveg amit szeretnénk lefordítani
 	-h
 	    (help) használati útmutató
    Használat:
-	./shellscript.sh f hu t en szia
+	./shellscript.sh -f hu -t en -w \"szia alma\"
 "; }
 
 mytarget=""

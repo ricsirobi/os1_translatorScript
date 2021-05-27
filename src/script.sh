@@ -5,7 +5,7 @@ help()
 echo "Használati útmutató:
 Leírás:
 	Lefordít egy adott szöveget megadott nyelvről a másik megadott nyelvre
-	-s
+	-f
 	    (source lang) nyelv, amiről fordítunk: két karakter, pl hu, en, es
 	-t
 	     (target lang) nyelv, amire fordítunk: két karakter, pl hu, en, es
